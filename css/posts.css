@@ -1,0 +1,20 @@
+﻿body {
+    background: #f8f8f8;
+}
+
+.commentMng {
+    height: 250px;
+    overflow: scroll;
+}
+
+.mainCard {
+    width : 40%;
+    margin : 0 auto;
+    margin-bottom : 30px;
+}
+
+@media only screen and (max-width: 750px) {
+    .mainCard {
+        width : 100%;
+    }
+}

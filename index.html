@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--favicon logo-->
+    <link rel="apple-touch-icon" sizes="57x57" href="faviconIcons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="faviconIcons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="faviconIcons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="faviconIcons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="faviconIcons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="faviconIcons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="faviconIcons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="faviconIcons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="faviconIcons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="faviconIcons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="faviconIcons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="faviconIcons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="faviconIcons/favicon-16x16.png">
+    <link rel="manifest" href="faviconIcons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="faviconIcons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--favicon logo end-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="utf-8" />
+    <title>Duabook</title>
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+
+    <!--firebase-->
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBcq-QQoM9LXyOPMlLZTjPChUazaiiYpOA",
+            authDomain: "duabook-1d25c.firebaseapp.com",
+            databaseURL: "https://duabook-1d25c.firebaseio.com",
+            projectId: "duabook-1d25c",
+            storageBucket: "duabook-1d25c.appspot.com",
+            messagingSenderId: "926597217458"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <!--firebase end-->
+
+
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+</head>
+<body>
+    <div class="bgAnimation">
+        <div class="content">
+            <div id="large-header" class="large-header">
+                <canvas id="bgCanvas"></canvas>
+                <h1 class="main-title"><img src="Images/logo/logo.png" alt="Duabook"/> </h1>
+                <!--carousal-->
+                <div class="container carContainer">
+                    <div class='row'>
+                        <div class='col-md-offset-2 col-md-8'>
+                            <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                                <!--Bottom Carousel Indicators-->
+                                <!--<ol class="carousel-indicators">
+                                    <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#quote-carousel" data-slide-to="1"></li>
+                                    <li data-target="#quote-carousel" data-slide-to="2"></li>
+                                </ol>-->
+                                <!--Carousel Slides / Quote-->
+                                <div class="carousel-inner">
+
+                                    <!-- Quote 1-->
+                                    <div class="item active">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <blockquote>
+                                                    <p>When your arms can't reach people who are close to your heart, always hug them with your prayers.</p>
+                                                    <small>Someone said</small>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Quote 2-->
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <blockquote>
+                                                    <p>Dua is a cure for lost souls, confused minds and broken hearts.</p>
+                                                    <small>Someone said</small>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Quote 3-->
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <blockquote>
+                                                    <p>When a problem knocks at the door, answer it with prayer and patience.</p>
+                                                    <small>Bilal Philips</small>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Carousel Buttons Next/Prev-->
+                                <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                                <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--carousal ends-->
+                <!--Button-->
+                <div class="container btnContainer">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <button onclick="window.location.href = 'signin.html'" type="button" id="acsBtn" class="btn btn-lg" role="button">Dua</button>
+                        </div>
+                    </div>
+                </div>
+                <!--Button end-->
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/rAF.js"></script>
+    <script src="js/bgAnimate.js"></script>
+    <!--authentication script-->
+    <script src="js/app.js"></script>
+
+
+    <!--bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <!--bootstrap end-->
+
+</body>
+</html>

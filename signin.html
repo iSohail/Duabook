@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--favicon logo-->
+    <link rel="apple-touch-icon" sizes="57x57" href="faviconIcons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="faviconIcons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="faviconIcons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="faviconIcons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="faviconIcons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="faviconIcons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="faviconIcons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="faviconIcons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="faviconIcons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="faviconIcons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="faviconIcons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="faviconIcons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="faviconIcons/favicon-16x16.png">
+    <link rel="manifest" href="faviconIcons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="faviconIcons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--favicon logo end-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <title>Duabook</title>
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+
+    <!--firebase-->
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBcq-QQoM9LXyOPMlLZTjPChUazaiiYpOA",
+            authDomain: "duabook-1d25c.firebaseapp.com",
+            databaseURL: "https://duabook-1d25c.firebaseio.com",
+            projectId: "duabook-1d25c",
+            storageBucket: "duabook-1d25c.appspot.com",
+            messagingSenderId: "926597217458"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <!--firebase end-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/signin.css" />
+</head>
+<body>
+
+
+
+
+    <h1 style="text-align : center;">
+        Duabook
+    </h1>
+    <!--form to use-->
+    <div class="container">
+        <div class="row ">
+            
+            <div class="col-md-6 col-md-offset-3 text-center ">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4>
+                            <strong class="">Login</strong>
+                        </h4>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <label for="usrEmail" class="col-sm-3 control-label">Email</label>
+                                <div class="col-sm-9">
+                                    <input type="email" class="form-control" id="usrEmail" placeholder="Email" required="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="psw" class="col-sm-3 control-label">Password</label>
+                                <div class="col-sm-9">
+                                    <input type="password" class="form-control" id="psw" placeholder="Password" required="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-9">
+                                    <div class="checkbox">
+                                        <label class="">
+                                            <input type="checkbox" class="">Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group last">
+                                <div class="col-sm-12">
+                                    <button type="submit" class="btn btn-success btn-block" onclick="signIn()">Sign in</button>
+                                    <button type="reset" class="btn btn-default btn-block">Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        Not Registered? <a href="signup.html" class="">Register here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--authentication script-->
+    <script src="js/app.js"></script>
+
+
+
+
+</body>
+</html>

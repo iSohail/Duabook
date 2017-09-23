@@ -1,0 +1,18 @@
+﻿body{
+    background : #1A000B;
+}
+
+
+.usrIdentity {
+    margin-right : 10px;
+}
+
+
+.radioPad {
+    margin-right : 20px;
+    margin-left : 20px;
+}
+
+.form-group label{
+    margin-top : 10px;
+}

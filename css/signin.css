@@ -1,0 +1,14 @@
+﻿body {
+     background : #f8f8f8;
+}
+
+.btn-success {
+    background : #E0DEDF;
+    border-color : #E0DEDF;
+    color : #000;
+}
+
+.btn-success:hover {
+    background : #f8f8f8;
+    color : #000;
+}
